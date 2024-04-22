@@ -19,10 +19,15 @@ const Home = () => {
     }, 1000);
   }, [])
 
-  
+  const check = () => {
+    fetch("/api/setCookie");
+  }
 
   return (
-    <div>{value}</div>
+    <div>
+      {value}
+      <button onClick={() => check()}>test</button>
+    </div>
   );
 }
 

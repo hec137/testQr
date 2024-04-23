@@ -6,6 +6,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<object>,
 ) {
+    var id = req.query["id"];
     res.setHeader('Set-Cookie', `timestamp=${Date.now()}; Path=/`);
     res.redirect('/');
     res.status(200).json({done: true});

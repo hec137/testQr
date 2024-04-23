@@ -1,6 +1,6 @@
 import React from "react";
 import Cookies from 'universal-cookie';
-import Search from "./components/search";
+import Search from "../../components/search";
 
 const Home = () => {
 
